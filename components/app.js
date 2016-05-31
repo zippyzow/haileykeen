@@ -1,0 +1,1 @@
+var haileyKeenModule = angular.module('hkApp', ['ngMaterial']);

@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<div class="main-container">
+  <div class="name">
+    HAILEY KEEN
+  </div>
+  <img class="profile-pic" src="assets/profile_pic_200px.jpg">
+  <div class="icon-container">
+    <a ng-repeat="icon in icons">
+      <img class="icon" ng-src="{{ icon.image }}">
+    </a>
+  </div>
+  <div class="work-container">
+    <span class="work-titles" ng-repeat="work in work">{{ work.title }}</span>
+  </div>
+</div>
 
-</body>
-</html>
+<div class="navbar-container">
+  <span class="navbar-titles" ng-repeat="link in navbar"> {{ link.title }}</span>
+</div>
+
+
