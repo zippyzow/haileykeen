@@ -5,19 +5,19 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
       image: 'assets/social_icons/grey_icons/github_icon.png'
     },
     {
-      url: 'https://github.com/zippyzow',
+      url: 'https://www.linkedin.com/in/haileyckeen',
       image: 'assets/social_icons/grey_icons/linkedin_icon.png'
     },
     {
-      url: 'https://github.com/zippyzow',
+      url: 'https://www.youtube.com/channel/UCmULIRdzacp6-WS6AekgvJQ',
       image: 'assets/social_icons/grey_icons/youtube_icon.png'
     },
     {
-      url: 'https://github.com/zippyzow',
+      url: 'http://haileyckeen.tumblr.com/',
       image: 'assets/social_icons/grey_icons/tumblr_icon.png'
     },
     {
-      url: 'https://github.com/zippyzow',
+      url: 'https://www.instagram.com/zippyzow/?hl=en',
       image: 'assets/social_icons/grey_icons/instagram_icon.png'
     }
   ];

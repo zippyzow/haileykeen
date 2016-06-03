@@ -4,12 +4,12 @@
   </div>
   <img class="profile-pic" src="assets/profile_pic_200px.jpg">
   <div class="icon-container">
-    <a ng-repeat="icon in icons">
-      <img class="icon" ng-src="{{ icon.image }}">
+    <a class="icon" ng-repeat="icon in icons" ng-href="{{ icon.url }}">
+      <img ng-src="{{ icon.image }}">
     </a>
   </div>
   <div class="work-container">
-    <span class="work-titles" ng-repeat="work in work">{{ work.title }}</span>
+    <div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>
   </div>
 </div>
 

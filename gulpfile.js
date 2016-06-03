@@ -9,7 +9,9 @@ var gulp  = require('gulp'),
 
 var jsComponents = 'components/**/*.js',
     jsShared = 'shared/**/*.js',
-    jsAll = [jsComponents, jsShared];
+    jsSrc = [jsComponents, jsShared],
+    jsVendor = './node_modules/angular-ui-router/release/angular-ui-router.min.js',
+    jsAll = ['components/**/*.js', 'shared/**/*.js', jsVendor];
 
 var scssComponents = 'components/**/*.scss',
     scssShared = 'shared/**/*.scss',
@@ -27,7 +29,7 @@ gulp.task('concat-js', function() {
 });
 
 gulp.task('jshint', function() {
-  return gulp.src(jsAll)
+  return gulp.src(jsSrc)
       .pipe(jshint())
       .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -52,7 +54,7 @@ gulp.task('build-and-concat-css', ['build-components-css', 'build-shared-css'], 
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
-  gulp.watch(jsAll, ['jshint', 'concat-js']);
+  gulp.watch(jsSrc, ['jshint', 'concat-js']);
   gulp.watch(scssAll, ['build-and-concat-css']);
 });
 
