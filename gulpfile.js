@@ -22,7 +22,7 @@ var htmlSrc = 'components/**/*.html';
 var buildPath = 'public/build';
 
 
-gulp.task('default', ['jshint', 'concat-js', 'build-and-concat-css', 'watch']);
+gulp.task('default', ['jshint', 'concat-js', 'build-and-concat-css', 'watch', 'build-html']);
 
 gulp.task('concat-js', function() {
   return gulp.src(jsAll)
