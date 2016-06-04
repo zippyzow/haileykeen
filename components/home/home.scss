@@ -63,11 +63,11 @@
   font-size: 55px;
   margin: 0 50px;
   display: inline-block;
-  transition: transform .5s;
+  transition: transform .2s;
 }
 
 .work-titles:hover {
-  transform: scale(1.5) translateZ(0);
+  transform: scale(1.2 ) translateZ(0);
 }
 
 .navbar-container {
