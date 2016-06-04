@@ -5,7 +5,7 @@ var gulp  = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
-    angularTemplates = require('gulp-angular-templates');
+    templateCache = require('gulp-angular-templatecache');
 
 var jsComponents = 'components/**/*.js',
     jsShared = 'shared/**/*.js',
@@ -22,7 +22,7 @@ var htmlSrc = 'components/**/*.html';
 var buildPath = 'public/build';
 
 
-gulp.task('default', ['jshint', 'concat-js', 'build-and-concat-css', 'watch', 'build-html']);
+gulp.task('default', ['jshint', 'concat-js', 'build-and-concat-css', 'build-html', 'watch']);
 
 gulp.task('concat-js', function() {
   return gulp.src(jsAll)
@@ -38,7 +38,7 @@ gulp.task('jshint', function() {
 
 gulp.task('build-html', function () {
   return gulp.src(htmlSrc)
-      .pipe(angularTemplates())
+      .pipe(templateCache())
       .pipe(gulp.dest(buildPath));
 });
 
