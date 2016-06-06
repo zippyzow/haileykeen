@@ -1,20 +1,39 @@
-<div class="main-container">
-  <div class="name">
-    HAILEY KEEN
-  </div>
+<!--<div class="main-container">-->
+  <!--<div class="name">-->
+    <!--HAILEY KEEN-->
+  <!--</div>-->
+  <!--<img class="profile-pic" src="assets/profile_pic_200px.jpg">-->
+  <!--<div class="icon-container">-->
+    <!--<a class="icon" ng-repeat="icon in icons" ng-href="{{ icon.url }}">-->
+      <!--<img ng-src="{{ icon.image }}">-->
+    <!--</a>-->
+  <!--</div>-->
+
+  <!--<div class="work-container">-->
+    <!--<div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!--<div class="navbar-container">-->
+  <!--<span class="navbar-titles" ng-repeat="link in navbar"> {{ link.title }}</span>-->
+<!--</div>-->
+
+
+
+<div layout="column" layout-align="center center">
+  <div class="name">HAILEY KEEN</div>
   <img class="profile-pic" src="assets/profile_pic_200px.jpg">
   <div class="icon-container">
     <a class="icon" ng-repeat="icon in icons" ng-href="{{ icon.url }}">
       <img ng-src="{{ icon.image }}">
     </a>
   </div>
-  <div class="work-container">
-    <div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>
-  </div>
 </div>
 
-<div class="navbar-container">
-  <span class="navbar-titles" ng-repeat="link in navbar"> {{ link.title }}</span>
+<div layout="row" layout-align="center center" class="work-container">
+  <div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>
+
 </div>
+
 
 
