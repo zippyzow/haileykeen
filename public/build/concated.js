@@ -39,10 +39,10 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
 
   $scope.work = [
     {
-      title: 'PROJECTS'
+      title: 'VIDEOS'
     },
     {
-      title: 'VIDEOS'
+      title: 'PROJECTS'
     },
     {
       title: 'PHOTOS'
