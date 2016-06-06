@@ -20,7 +20,7 @@
 
 
 
-<div layout="column" layout-align="center center">
+<div layout="column" layout-align="center center" class="main-container">
   <div class="name">HAILEY KEEN</div>
   <img class="profile-pic" src="assets/profile_pic_200px.jpg">
   <div class="icon-container">
@@ -28,12 +28,11 @@
       <img ng-src="{{ icon.image }}">
     </a>
   </div>
+  <div layout="row" layout-align="center center" class="work-container">
+    <div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>
+  </div>
 </div>
 
-<div layout="row" layout-align="center center" class="work-container">
-  <div class="work-titles" ng-repeat="work in work">{{ work.title }}</div>
-
-</div>
 
 
 
