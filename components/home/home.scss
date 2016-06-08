@@ -8,7 +8,6 @@
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
-  //text-align: center;
 }
 
 .name {
@@ -23,6 +22,7 @@
 
 .profile-pic {
   border-radius: 50%;
+  border: 1px solid gray;
   width: 165px;
   height: auto;
   margin-top: 40px;
@@ -30,7 +30,7 @@
 }
 
 .profile-pic:hover {
-  box-shadow: 0px 0px 40px #a0a0a0;
+  box-shadow: 0px 0px 10px #a0a0a0;
 }
 
 .profile-pic:active {
@@ -67,7 +67,6 @@
   @include lato;
   font-size: 55px;
   margin: 0 50px;
-  //display: inline-block;
   transition: transform .2s;
 }
 
@@ -83,6 +82,7 @@
 
 .navbar-titles {
   @include lato;
+  font-weight: 300;
   font-size: 20px;
   margin: 10px;
   font-family: 'Lato', sans-serif;

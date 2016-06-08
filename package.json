@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/zippyzow/haileykeen.com#readme",
   "devDependencies": {
-    "angular-ui-router": "^0.3.0",
+    "angular-ui-router": "^0.3.1",
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-angular-templates": "0.0.2",
     "gulp-concat": "^2.6.0",

@@ -9,12 +9,12 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
       image: 'assets/social_icons/grey_icons/linkedin_icon.png'
     },
     {
-      url: 'https://www.youtube.com/channel/UCmULIRdzacp6-WS6AekgvJQ',
-      image: 'assets/social_icons/grey_icons/youtube_icon.png'
-    },
-    {
       url: 'http://haileyckeen.tumblr.com/',
       image: 'assets/social_icons/grey_icons/tumblr_icon.png'
+    },
+    {
+      url: 'https://www.youtube.com/channel/UCmULIRdzacp6-WS6AekgvJQ',
+      image: 'assets/social_icons/grey_icons/youtube_icon.png'
     },
     {
       url: 'https://www.instagram.com/zippyzow/?hl=en',
@@ -24,13 +24,16 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
 
   $scope.work = [
     {
-      title: 'VIDEOS'
+      title: 'VIDEOS',
+      state: 'videos'
     },
     {
-      title: 'PROJECTS'
+      title: 'PROJECTS',
+      state: 'projects'
     },
     {
-      title: 'PHOTOS'
+      title: 'PHOTOS',
+      state: 'photos'
     }
   ];
 

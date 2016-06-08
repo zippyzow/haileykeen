@@ -10,5 +10,20 @@ haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($state
         url:'/',
         templateUrl: 'home/home.html',
         controller: 'homeCtrl'
+      })
+      .state('projects', {
+        url: '/projects',
+        templateUrl: 'projects/projects.html',
+        controller: 'projectsCtrl'
+      })
+      .state('videos', {
+        url: '/videos',
+        templateUrl: 'videos/videos.html',
+        controller: 'videosCtrl'
+      })
+      .state('photos', {
+        url: '/photos',
+        templateUrl: 'photos/photos.html',
+        controller: 'photosCtrl'
       });
 }]);
