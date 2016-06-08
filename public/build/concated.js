@@ -28,7 +28,7 @@ haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($state
       });
 }]);
 
-haileyKeenModule.controller('homeCtrl', function($scope) {
+haileyKeenModule.controller('homeCtrl', function($scope, $state) {
   $scope.icons = [
     {
       url: 'https://github.com/zippyzow',
@@ -52,7 +52,7 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
     }
   ];
 
-  $scope.work = [
+  $scope.workSections = [
     {
       title: 'VIDEOS',
       state: 'videos'
@@ -66,6 +66,10 @@ haileyKeenModule.controller('homeCtrl', function($scope) {
       state: 'photos'
     }
   ];
+
+  $scope.goToState = function(state) {
+    $state.go(state);
+  };
 
   $scope.navbar = [
     {
