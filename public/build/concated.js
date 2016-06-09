@@ -28,6 +28,14 @@ haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($state
       });
 }]);
 
+/**
+ * Created by haileykeen on 6/8/16.
+ */
+
+/**
+ * Created by haileykeen on 6/8/16.
+ */
+
 haileyKeenModule.controller('homeCtrl', function($scope, $state) {
   $scope.icons = [
     {

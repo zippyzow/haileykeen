@@ -7,17 +7,17 @@ var gulp  = require('gulp'),
     uglify = require('gulp-uglify'),
     templateCache = require('gulp-angular-templatecache');
 
-var jsComponents = 'components/**/*.js',
+var jsComponents = 'src/**/*.js',
     jsShared = 'shared/**/*.js',
     jsSrc = [jsComponents, jsShared],
     jsVendor = './node_modules/angular-ui-router/release/angular-ui-router.min.js',
-    jsAll = ['components/**/*.js', 'shared/**/*.js', jsVendor];
+    jsAll = ['src/**/*.js', 'shared/**/*.js', jsVendor];
 
-var scssComponents = 'components/**/*.scss',
+var scssComponents = 'src/**/*.scss',
     scssShared = 'shared/**/*.scss',
     scssSrc = [scssComponents, scssShared];
 
-var htmlSrc = 'components/**/*.html';
+var htmlSrc = 'src/**/*.html';
 
 var buildPath = 'public/build';
 
@@ -42,10 +42,10 @@ gulp.task('build-html', function () {
       .pipe(gulp.dest(buildPath));
 });
 
-gulp.task('build-components-css', function() {
+gulp.task('build-src-css', function() {
   return gulp.src(scssComponents)
       .pipe(sass())
-      .pipe(gulp.dest('intermediate/stylesheets/components'));
+      .pipe(gulp.dest('intermediate/stylesheets/src'));
 });
 
 gulp.task('build-shared-css', function() {
@@ -54,7 +54,7 @@ gulp.task('build-shared-css', function() {
       .pipe(gulp.dest('intermediate/stylesheets/shared'));
 });
 
-gulp.task('build-and-concat-css', ['build-components-css', 'build-shared-css'], function() {
+gulp.task('build-and-concat-css', ['build-src-css', 'build-shared-css'], function() {
   return gulp.src('intermediate/**/*.css')
       .pipe(concat('bundle.css'))
       .pipe(gulp.dest(buildPath));
