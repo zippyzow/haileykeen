@@ -5,11 +5,6 @@ var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ui.router', 'temp
 haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
-      .state('home', {
-        url:'/',
-        templateUrl: 'main/home/home.html',
-        controller: 'homeCtrl'
-      })
       .state('projects', {
         url: '/projects',
         templateUrl: 'main/projects/projects.html',
@@ -79,4 +74,11 @@ haileyKeenModule.controller('homeCtrl', function($scope, $state) {
       image: 'assets/social_icons/grey_icons/instagram_icon.png'
     }
   ];
+});
+haileyKeenModule.directive('hkHome', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'main/home/home.html',
+    controller: 'homeCtrl'
+  };
 });
