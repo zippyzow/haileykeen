@@ -1,3 +1,21 @@
-/**
- * Created by haileykeen on 6/8/16.
- */
+haileyKeenModule.controller('mainCtrl', function($scope, $state) {
+
+  $scope.workSections = [
+    {
+      title: 'VIDEOS',
+      state: 'videos'
+    },
+    {
+      title: 'PROJECTS',
+      state: 'projects'
+    },
+    {
+      title: 'PHOTOS',
+      state: 'photos'
+    }
+  ];
+
+  $scope.goToState = function (state) {
+    $state.go(state);
+  };
+});

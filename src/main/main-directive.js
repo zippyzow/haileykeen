@@ -1,3 +1,7 @@
-/**
- * Created by haileykeen on 6/8/16.
- */
+haileyKeenModule.directive('hkMain', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'main/main.html',
+    controller: 'mainCtrl'
+  };
+});

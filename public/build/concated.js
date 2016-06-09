@@ -27,15 +27,36 @@ haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($state
       });
 }]);
 
-/**
- * Created by haileykeen on 6/8/16.
- */
+haileyKeenModule.controller('mainCtrl', function($scope, $state) {
 
-/**
- * Created by haileykeen on 6/8/16.
- */
+  $scope.workSections = [
+    {
+      title: 'VIDEOS',
+      state: 'videos'
+    },
+    {
+      title: 'PROJECTS',
+      state: 'projects'
+    },
+    {
+      title: 'PHOTOS',
+      state: 'photos'
+    }
+  ];
 
+  $scope.goToState = function (state) {
+    $state.go(state);
+  };
+});
+haileyKeenModule.directive('hkMain', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'main/main.html',
+    controller: 'mainCtrl'
+  };
+});
 haileyKeenModule.controller('homeCtrl', function($scope, $state) {
+  
   $scope.icons = [
     {
       url: 'https://github.com/zippyzow',
@@ -58,31 +79,4 @@ haileyKeenModule.controller('homeCtrl', function($scope, $state) {
       image: 'assets/social_icons/grey_icons/instagram_icon.png'
     }
   ];
-
-  $scope.workSections = [
-    {
-      title: 'VIDEOS',
-      state: 'videos'
-    },
-    {
-      title: 'PROJECTS',
-      state: 'projects'
-    },
-    {
-      title: 'PHOTOS',
-      state: 'photos'
-    }
-  ];
-
-  $scope.goToState = function(state) {
-    $state.go(state);
-  };
-  
-});
-haileyKeenModule.directive('hkHome', function() {
-  return {
-    restrict: 'E',
-    templateUrl: 'home/home.html',
-    controller: 'homeCtrl'
-  };
 });
