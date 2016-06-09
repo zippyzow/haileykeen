@@ -4,26 +4,25 @@ var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ui.router', 'temp
 
 haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
-
   $stateProvider
       .state('home', {
         url:'/',
-        templateUrl: 'home/home.html',
+        templateUrl: 'main/home/home.html',
         controller: 'homeCtrl'
       })
       .state('projects', {
         url: '/projects',
-        templateUrl: 'projects/projects.html',
+        templateUrl: 'main/projects/projects.html',
         controller: 'projectsCtrl'
       })
       .state('videos', {
         url: '/videos',
-        templateUrl: 'videos/videos.html',
+        templateUrl: 'main/videos/videos.html',
         controller: 'videosCtrl'
       })
       .state('photos', {
         url: '/photos',
-        templateUrl: 'photos/photos.html',
+        templateUrl: 'main/photos/photos.html',
         controller: 'photosCtrl'
       });
 }]);
@@ -78,18 +77,6 @@ haileyKeenModule.controller('homeCtrl', function($scope, $state) {
   $scope.goToState = function(state) {
     $state.go(state);
   };
-
-  $scope.navbar = [
-    {
-      title: 'ABOUT'
-    },
-    {
-      title: 'RESUME'
-    },
-    {
-      title: 'CONTACT'
-    }
-  ];
   
 });
 haileyKeenModule.directive('hkHome', function() {

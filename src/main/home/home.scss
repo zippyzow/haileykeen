@@ -73,22 +73,3 @@
 .work-titles:hover {
   transform: scale(1.2 ) translateZ(0);
 }
-
-.navbar-container {
-  float: right;
-  margin-top: 15px;
-  margin-right: 15px;
-}
-
-.navbar-titles {
-  @include lato;
-  font-weight: 300;
-  font-size: 20px;
-  margin: 10px;
-  font-family: 'Lato', sans-serif;
-  transition: transform .2s;
-}
-
-.navbar-titles:hover {
-  transform: scale(1.2 ) translateZ(0);
-}

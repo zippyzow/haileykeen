@@ -40,17 +40,5 @@ haileyKeenModule.controller('homeCtrl', function($scope, $state) {
   $scope.goToState = function(state) {
     $state.go(state);
   };
-
-  $scope.navbar = [
-    {
-      title: 'ABOUT'
-    },
-    {
-      title: 'RESUME'
-    },
-    {
-      title: 'CONTACT'
-    }
-  ];
   
 });
