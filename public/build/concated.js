@@ -1,6 +1,6 @@
 angular.module('templates', []);
 
-var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ui.router', 'templates']);
+var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ngAnimate', 'ui.router', 'templates']);
 
 haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
@@ -22,7 +22,7 @@ haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($state
       });
 }]);
 
-haileyKeenModule.controller('mainCtrl', function($scope, $state) {
+haileyKeenModule.controller('mainCtrl', function($scope, $state, $animate) {
 
   $scope.workSections = [
     {
@@ -39,7 +39,9 @@ haileyKeenModule.controller('mainCtrl', function($scope, $state) {
     }
   ];
 
-  $scope.goToState = function (state) {
+  $scope.goToState = function(state) {
+    var hkHome = document.querySelector('hk-home');
+    $animate.addClass(hkHome, 'small');
     $state.go(state);
   };
 });

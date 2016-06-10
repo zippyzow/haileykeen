@@ -1,6 +1,6 @@
 angular.module('templates', []);
 
-var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ui.router', 'templates']);
+var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ngAnimate', 'ui.router', 'templates']);
 
 haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');

@@ -1,4 +1,4 @@
-haileyKeenModule.controller('mainCtrl', function($scope, $state) {
+haileyKeenModule.controller('mainCtrl', function($scope, $state, $animate) {
 
   $scope.workSections = [
     {
@@ -15,7 +15,9 @@ haileyKeenModule.controller('mainCtrl', function($scope, $state) {
     }
   ];
 
-  $scope.goToState = function (state) {
+  $scope.goToState = function(state) {
+    var hkHome = document.querySelector('hk-home');
+    $animate.addClass(hkHome, 'small');
     $state.go(state);
   };
 });
