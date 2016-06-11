@@ -1,9 +1,6 @@
 .hk-home {
   transition: height 2s linear;
-  overflow: hidden;
-  
-}
+  overflow: hidden; }
 
 .hk-home.small {
-  height: 10px;
-}
+  height: 10px; }
