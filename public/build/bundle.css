@@ -224,3 +224,16 @@ hk-home.small {
 .work-titles:hover {
   transform: scale(1.2) translateZ(0); }
 
+.card-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 40px; }
+
+.card-image {
+  height: auto;
+  width: 400px; }
+
+.card-description {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px; }

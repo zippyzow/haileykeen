@@ -1,0 +1,19 @@
+@mixin lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.card-title {
+  @include lato;
+  font-size: 40px;
+}
+
+.card-image {
+  height: auto;
+  width: 400px;
+}
+
+.card-description {
+  @include lato;
+  font-size: 20px;
+}
