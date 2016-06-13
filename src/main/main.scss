@@ -1,9 +1,14 @@
-.hk-home {
-  transition: height 2s linear;
+hk-home {
+  transition: height .2s linear;
+  height: 450px;
+  display: block;
   overflow: hidden;
-  
 }
 
-.hk-home.small {
-  height: 10px;
+hk-home.small {
+  height: 80px;
+}
+
+.work-view-container {
+  height: 0px;
 }

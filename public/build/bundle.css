@@ -79,12 +79,17 @@ h2 {
 .navbar-titles:hover {
   transform: scale(1.2) translateZ(0); }
 
-.hk-home {
-  transition: height 2s linear;
+hk-home {
+  transition: height .2s linear;
+  height: 450px;
+  display: block;
   overflow: hidden; }
 
-.hk-home.small {
-  height: 10px; }
+hk-home.small {
+  height: 80px; }
+
+.work-view-container {
+  height: 0px; }
 
 .main-container {
   position: absolute;

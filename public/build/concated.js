@@ -84,3 +84,6 @@ haileyKeenModule.directive('hkHome', function() {
     controller: 'homeCtrl'
   };
 });
+haileyKeenModule.controller('projectsCtrl', function($scope) {
+
+});
