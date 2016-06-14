@@ -18,6 +18,7 @@ haileyKeenModule.controller('mainCtrl', function($scope, $state, $animate) {
   $scope.goToState = function(state) {
     var hkHome = document.querySelector('hk-home');
     $animate.addClass(hkHome, 'small');
+    
     $state.go(state);
   };
 });

@@ -79,17 +79,15 @@ h2 {
 .navbar-titles:hover {
   transform: scale(1.2) translateZ(0); }
 
+hk-main {
+  display: block; }
+
 hk-home {
-  transition: height .2s linear;
-  height: 450px;
   display: block;
-  overflow: hidden; }
+  background-color: #f0f0f0; }
 
-hk-home.small {
-  height: 80px; }
-
-.work-view-container {
-  height: 500px; }
+hk-projects {
+  display: block; }
 
 .main-container {
   position: absolute;
@@ -175,16 +173,16 @@ hk-home.small {
   font-size: 105px; }
 
 .role {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 22px; }
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin-top: 8px; }
 
 .profile-pic {
   border-radius: 50%;
   border: 1px solid gray;
   width: 165px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 28px;
   transition: box-shadow .2s ease-out, transform .4s linear; }
 
 .profile-pic:hover {
@@ -195,7 +193,7 @@ hk-home.small {
   transform: rotate(360deg); }
 
 .icon-container {
-  margin-top: 30px; }
+  margin: 30px 0; }
 
 .icon {
   display: inline-block;
@@ -224,16 +222,66 @@ hk-home.small {
 .work-titles:hover {
   transform: scale(1.2) translateZ(0); }
 
+.projects-container {
+  padding: 0 15px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.md-whiteframe-1dp {
+  padding: 12px 12px; }
+
+.projects-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 40px; }
+
 .card-title {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 40px; }
+  font-size: 35px;
+  margin-top: 5px; }
 
 .card-image {
+  display: block;
   height: auto;
-  width: 400px; }
+  width: 100%; }
+
+md-chips-wrap {
+  box-shadow: none !important;
+  padding: 8px !important; }
+
+md-chip {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px !important;
+  height: 16px !important;
+  margin-top: 4px !important;
+  margin-right: 4px !important;
+  padding: 0 6px !important;
+  background-color: #f0f0f0 !important; }
 
 .card-description {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 20px; }
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 8px; }
+
+.project-icons-container {
+  margin-top: 15px; }
+
+.projects-icon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 28px;
+  height: 28px; }
+
+.projects-icon img {
+  width: 100%;
+  height: 100%;
+  transition: transform .2s ease-out; }
+
+.projects-icon img:hover {
+  transform: scale(1.3); }

@@ -1,11 +1,9 @@
+hk-main {
+  display: block; }
+
 hk-home {
-  transition: height .2s linear;
-  height: 450px;
   display: block;
-  overflow: hidden; }
+  background-color: #f0f0f0; }
 
-hk-home.small {
-  height: 80px; }
-
-.work-view-container {
-  height: 500px; }
+hk-projects {
+  display: block; }

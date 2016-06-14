@@ -3,17 +3,77 @@
   font-weight: 100;
 }
 
+.projects-container {
+  padding: 0 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.md-whiteframe-1dp {
+  padding: 12px 12px;
+}
+
+.projects-title {
+  @include lato;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .card-title {
   @include lato;
-  font-size: 40px;
+  font-size: 35px;
+  margin-top: 5px;
+  //padding: 5px;
 }
 
 .card-image {
+  display: block;
   height: auto;
-  width: 400px;
+  width: 100%;
+}
+
+md-chips-wrap {
+  box-shadow: none !important;
+  padding: 8px !important;
+}
+
+md-chip {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px !important;
+  height: 16px !important;
+  margin-top: 4px !important;
+  margin-right: 4px !important;
+  padding: 0 6px !important;
+  background-color: #f0f0f0 !important;
 }
 
 .card-description {
-  @include lato;
-  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+.project-icons-container {
+  margin-top: 15px;
+}
+
+.projects-icon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.projects-icon img {
+  width: 100%;
+  height: 100%;
+  transition: transform .2s ease-out;
+}
+
+.projects-icon img:hover {
+  transform: scale(1.3);
 }
