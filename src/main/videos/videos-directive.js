@@ -1,3 +1,7 @@
-/**
- * Created by haileykeen on 6/14/16.
- */
+haileyKeenModule.directive('hkVideos', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'main/videos/videos.html',
+    controller: 'projectsCtrl'
+  };
+});
