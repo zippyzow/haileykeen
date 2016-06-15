@@ -1,12 +1,24 @@
 hk-main {
   display: block;
+  background-repeat: repeat;
+  padding-bottom: 40px;
 }
 
 hk-home {
   display: block;
   background-color: #f0f0f0;
+  //background-repeat: repeat;
+  background-image: url("../../public/assets/grass-small-50.jpg");
 }
 
 hk-projects {
   display: block;
+  background-color: transparent;
+  padding-bottom: 12px;
+}
+
+hk-videos {
+  display: block;
+  background-color: transparent;
+  padding-bottom: 12px;
 }

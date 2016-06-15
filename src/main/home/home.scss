@@ -3,20 +3,26 @@
   font-weight: 100;
 }
 
+hk-home {
+  color: white;
+}
+
 .name {
   @include lato;
   font-size: 105px;
+  font-weight: 300;
 }
 
 .role {
   font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   font-size: 18px;
   margin-top: 8px;
 }
 
 .profile-pic {
   border-radius: 50%;
-  border: 1px solid gray;
+  border: 1px solid white;
   width: 165px;
   height: auto;
   margin-top: 28px;
@@ -28,12 +34,12 @@
 }
 
 .profile-pic:active {
-  box-shadow: 0px 0px 40px blue;
+  box-shadow: 0px 0px 40px magenta;
   transform: rotate(360deg);
 }
 
 .icon-container {
-  margin: 30px 0;
+  margin: 30px 0 0;
 }
 
 .icon {
@@ -66,4 +72,17 @@
 
 .work-titles:hover {
   transform: scale(1.2 ) translateZ(0);
+}
+
+.resume-icon {
+  height: 32px;
+  margin-bottom: -10px;
+}
+
+.resume {
+  @include lato;
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }

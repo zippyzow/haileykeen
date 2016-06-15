@@ -1,49 +1,27 @@
-<!--<div layout="column" class="projects-container">-->
-<!--<div class="projects-title">PROJECTS</div>-->
-<!--<md-grid-list md-cols="3" md-gutter="28px" md-row-height="550px">-->
-<!--<md-grid-tile ng-repeat="project in projects">-->
-<!--<md-whiteframe layout-fill layout="column" class="md-whiteframe-2dp">-->
-<!--<img class="card-image" ng-src="{{ project.image }}">-->
-<!--<div class="card-title">{{ project.title }}</div>-->
-<!--<md-chips ng-model="project.technologies" readonly="true"></md-chips>-->
-<!--<div class="card-description">{{ project.description }}</div>-->
-<!--<div class="project-icons-container">-->
-<!--<a class="projects-icon" ng-href="{{ project.githubUrl }}">-->
-<!--<img ng-src="assets/social_icons/grey_icons/github_icon.png">-->
-<!--</a>-->
-<!--<a class="projects-icon" ng-href="{{ project.deployedUrl }}">-->
-<!--<img ng-src="assets/social_icons/grey_icons/website_icon.png">-->
-<!--</a>-->
-<!--</div>-->
-<!--</md-whiteframe>-->
-<!--</md-grid-tile>-->
-<!--</md-grid-list>-->
-<!--</div>-->
-
 <div layout="column" class="projects-container">
   <div class="projects-title">PROJECTS</div>
 
-  <md-grid-list md-cols="3" md-gutter="20px" md-row-height="545px">
+  <md-grid-list md-cols="3" md-gutter="40px" md-row-height="520px">
     <md-grid-tile ng-repeat="project in projects">
 
-      <md-card layout-fill>
-        <img class="md-card-image" ng-src="{{ project.image }}">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline card-title">{{ project.title }}</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <md-chips ng-model="project.technologies" readonly="true"></md-chips>
-          <p class="card-description">{{ project.description }}</p>
-        </md-card-content>
+      <md-card md-whiteframe="8" layout-fill>
+        <a ng-href="{{ project.deployedUrl }}">
+          <img class="card-image md-card-image" ng-src="{{ project.image }}">
+        </a>
+        <div class="md-headline card-title">{{ project.title }}</div>
+        <div flex layout="row">
+          <md-card-content>
+            <md-chips ng-model="project.technologies" readonly="true"></md-chips>
+            <p flex class="card-description">{{ project.description }}</p>
+          </md-card-content>
+        </div>
         <md-card-actions layout="row" layout-align="end center">
-            <a class="projects-icon" ng-href="{{ project.githubUrl }}">
-              <img ng-src="assets/social_icons/grey_icons/github_icon.png">
-            </a>
-            <a class="projects-icon" ng-href="{{ project.deployedUrl }}">
-              <img ng-src="assets/social_icons/grey_icons/website_icon.png">
-            </a>
+          <a class="projects-icon" ng-href="{{ project.githubUrl }}">
+            <img ng-src="assets/social_icons/grey_icons/github_icon.png">
+          </a>
+          <a class="projects-icon" ng-href="{{ project.deployedUrl }}">
+            <img ng-src="assets/social_icons/grey_icons/website_icon.png">
+          </a>
         </md-card-actions>
       </md-card>
 

@@ -58,23 +58,23 @@ haileyKeenModule.controller('homeCtrl', function($scope, $state) {
   $scope.icons = [
     {
       url: 'https://github.com/zippyzow',
-      image: 'assets/social_icons/grey_icons/github_icon.png'
+      image: 'assets/social_icons/grey_icons/github_icon_white.png'
     },
     {
       url: 'https://www.linkedin.com/in/haileyckeen',
-      image: 'assets/social_icons/grey_icons/linkedin_icon.png'
+      image: 'assets/social_icons/grey_icons/linkedin_icon_white.png'
     },
     {
       url: 'http://haileyckeen.tumblr.com/',
-      image: 'assets/social_icons/grey_icons/tumblr_icon.png'
+      image: 'assets/social_icons/grey_icons/tumblr_icon_white.png'
     },
     {
       url: 'https://www.youtube.com/channel/UCmULIRdzacp6-WS6AekgvJQ',
-      image: 'assets/social_icons/grey_icons/youtube_icon.png'
+      image: 'assets/social_icons/grey_icons/youtube_icon_white.png'
     },
     {
       url: 'https://www.instagram.com/zippyzow/?hl=en',
-      image: 'assets/social_icons/grey_icons/instagram_icon.png'
+      image: 'assets/social_icons/grey_icons/instagram_icon_white.png'
     }
   ];
 });
@@ -121,13 +121,33 @@ haileyKeenModule.directive('hkProjects', function() {
     controller: 'projectsCtrl'
   };
 });
-haileyKeenModule.controller('videosCtrl', function($scope) {
-  
+haileyKeenModule.controller('videosCtrl', function($scope, $sce) {
+
+  $scope.videos = [
+    {
+      title: 'WATERFALLS',
+      embedUrl: $sce.trustAsResourceUrl('https://www.youtube.com/embed/_henIN18dz0'),
+      technologies: ['Final Cut Pro X', 'Photoshop', 'DJI Phantom 2', 'GoPro'],
+      description: 'Top 10 waterfalls of Iceland'
+    },
+    {
+      title: 'ICEBERGS',
+      embedUrl: $sce.trustAsResourceUrl('https://www.youtube.com/embed/jJA8gIoxEuY'),
+      technologies: ['Final Cut Pro X', 'DJI Phantom 2', 'GoPro'],
+      description: 'Iceland Jökulsárlón Icebergs'
+    },
+    {
+      title: 'QUADCOPTER',
+      embedUrl: $sce.trustAsResourceUrl('https://www.youtube.com/embed/DMx_kbl3CBg'),
+      technologies: ['Final Cut Pro X', 'Parrot AR Drone 2.0', 'DSLR'],
+      description: 'Parrot AR Drone 2.0 Rooftop and Indoor Flight'
+    }
+  ];
 });
 haileyKeenModule.directive('hkVideos', function() {
   return {
     restrict: 'E',
     templateUrl: 'main/videos/videos.html',
-    controller: 'projectsCtrl'
+    controller: 'videosCtrl'
   };
 });

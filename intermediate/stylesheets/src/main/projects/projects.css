@@ -1,15 +1,13 @@
 .projects-container {
-  padding: 0 15px;
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
-.md-whiteframe-1dp {
-  padding: 12px 12px; }
+  padding: 0 40px;
+  margin-top: 40px; }
 
 .projects-title {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 65px;
+  font-weight: 300;
+  color: #CEB6A6;
+  font-size: 45px;
   text-align: center;
   margin-bottom: 35px; }
 
@@ -17,12 +15,12 @@
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 35px;
-  margin-top: 5px; }
+  padding: 17px 24px 0;
+  font-weight: 300;
+  color: #909090; }
 
 .card-image {
-  display: block;
-  height: auto;
-  width: 100%; }
+  border-bottom: 1px solid #d0d0d0; }
 
 md-chips-wrap {
   box-shadow: none !important;
@@ -30,7 +28,7 @@ md-chips-wrap {
 
 md-chip {
   font-family: 'Raleway', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 16px !important;
   height: 16px !important;
@@ -45,12 +43,9 @@ md-chip {
   margin-top: 5px;
   padding: 8px; }
 
-.project-icons-container {
-  margin-top: 15px; }
-
 .projects-icon {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 8px;
   width: 28px;
   height: 28px; }
 
