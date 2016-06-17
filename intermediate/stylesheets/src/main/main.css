@@ -5,8 +5,8 @@ hk-main {
 
 hk-home {
   display: block;
-  background-color: #f0f0f0;
-  background-image: url("../../public/assets/grass-small-50.jpg"); }
+  background-color: #404040;
+  background-image: url("../assets/grass-small-75.jpg"); }
 
 hk-projects {
   display: block;

@@ -86,8 +86,8 @@ hk-main {
 
 hk-home {
   display: block;
-  background-color: #f0f0f0;
-  background-image: url("../../public/assets/grass-small-50.jpg"); }
+  background-color: #404040;
+  background-image: url("../assets/grass-small-75.jpg"); }
 
 hk-projects {
   display: block;
@@ -189,8 +189,9 @@ hk-home {
 .role {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  margin-top: 8px; }
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: center; }
 
 .profile-pic {
   border-radius: 50%;
@@ -201,66 +202,47 @@ hk-home {
   transition: box-shadow .2s ease-out, transform .4s linear; }
 
 .profile-pic:hover {
-  box-shadow: 0px 0px 10px #a0a0a0; }
+  box-shadow: 0 0 10px #a0a0a0; }
 
 .profile-pic:active {
-  box-shadow: 0px 0px 40px magenta;
+  box-shadow: 0 0 20px 10px white;
   transform: rotate(360deg); }
 
-.icon-container {
-  margin: 30px 0 0; }
+.social-container {
+  margin: 30px 0 20px; }
 
-.icon {
-  display: inline-block;
-  margin: 0 12px;
+.social-button {
+  color: white;
+  height: 32px;
+  width: 32px;
+  margin: 0 !important; }
+
+.social-button img {
   width: 32px;
   height: 32px; }
 
-.icon img {
-  width: 100%;
-  height: 100%;
-  transition: transform .2s ease-out; }
+.bottom-container {
+  margin-top: 10px;
+  margin-bottom: 30px; }
 
-.icon img:hover {
-  transform: scale(1.3); }
-
-.work-container {
-  margin-top: 55px; }
-
-.work-titles {
+.bottom-button {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 55px;
-  margin: 0 50px;
-  transition: transform .2s; }
-
-.work-titles:hover {
-  transform: scale(1.2) translateZ(0); }
-
-.resume-icon {
-  height: 32px;
-  margin-bottom: -10px; }
-
-.resume {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  margin-top: 8px;
+  margin: -4px 12px;
   font-size: 20px;
   font-weight: 400;
   color: white; }
 
-.video-wrapper {
-  position: relative;
-  padding-bottom: 55.25%;
-  /* 16:9 */
-  height: 0; }
+.bottom-button img {
+  height: 32px;
+  width: 32px;
+  margin-bottom: -10px; }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+.scale-up {
+  transition: transform .2s ease-out; }
+
+.scale-up:hover {
+  transform: scale(1.3) !important; }
 
 .projects-container {
   padding: 0 40px;
@@ -320,3 +302,16 @@ md-chip {
 
 .projects-icon img:hover {
   transform: scale(1.3); }
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 55.25%;
+  /* 16:9 */
+  height: 0; }
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }

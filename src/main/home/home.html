@@ -1,18 +1,30 @@
 <div layout="column" layout-align="center center" class="md-whiteframe-8dp">
   <div class="name">HAILEY KEEN</div>
-  <div class="role">Design and UX oriented fullstack developer</div>
+  <div class="role">Design and UX oriented developer interested in <br>  food, movies, music, fitness, and anything dog related.</div>
   <img class="profile-pic" src="assets/profile_pic_200px.jpg">
-  <div class="icon-container">
-    <a class="icon" ng-repeat="icon in icons" ng-href="{{ icon.url }}">
-      <img ng-src="{{ icon.image }}">
+
+  <div layout="row" class="social-container">
+    <a ng-repeat="icon in icons" ng-href="{{ icon.url }}">
+      <md-button class="social-button scale-up">
+        <img ng-src="{{ icon.image }}">
+      </md-button>
     </a>
   </div>
-  <a href="assets/hailey-keen-resume-2016.pdf">
-    <md-button class="resume">
-      <img class="resume-icon" src="assets/social_icons/grey_icons/download_icon_white.png">
-      <div>RESUME</div>
-    </md-button>
-  </a>
+
+  <div layout="row" class="bottom-container">
+    <a class="scale-up" href="assets/hailey-keen-resume-2016.pdf">
+      <md-button class="bottom-button">
+        <img src="assets/icons/thick/download-white.png">
+        <div>RESUME</div>
+      </md-button>
+    </a>
+    <a href="mailto:haileyckeen@gmail.com">
+      <md-button class="bottom-button scale-up">
+        <img src="assets/icons/thick/mail-white.png">
+        <div>CONTACT</div>
+      </md-button>
+    </a>
+  </div>
 </div>
 
 
