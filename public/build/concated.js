@@ -1,28 +1,8 @@
 angular.module('templates', []);
 
-var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ngAnimate', 'ui.router', 'templates']);
+var haileyKeenModule = angular.module('hkApp', ['ngMaterial', 'ngAnimate', 'templates']);
 
-haileyKeenModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/');
-  $stateProvider
-      .state('projects', {
-        url: '/projects',
-        templateUrl: 'main/projects/projects.html',
-        controller: 'projectsCtrl'
-      })
-      .state('videos', {
-        url: '/videos',
-        templateUrl: 'main/videos/videos.html',
-        controller: 'videosCtrl'
-      })
-      .state('photos', {
-        url: '/photos',
-        templateUrl: 'main/photos/photos.html',
-        controller: 'photosCtrl'
-      });
-}]);
-
-haileyKeenModule.controller('mainCtrl', function($scope, $state, $animate) {
+haileyKeenModule.controller('mainCtrl', function($scope) {
 
   $scope.workSections = [
     {
@@ -38,13 +18,6 @@ haileyKeenModule.controller('mainCtrl', function($scope, $state, $animate) {
       state: 'photos'
     }
   ];
-
-  $scope.goToState = function(state) {
-    var hkHome = document.querySelector('hk-home');
-    $animate.addClass(hkHome, 'small');
-    
-    $state.go(state);
-  };
 });
 haileyKeenModule.directive('hkMain', function() {
   return {
