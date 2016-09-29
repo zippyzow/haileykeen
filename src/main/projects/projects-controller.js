@@ -10,6 +10,14 @@ haileyKeenModule.controller('projectsCtrl', function($scope) {
       deployedUrl: 'http://www.filmstack.xyz/'
     },
     {
+      title: 'AIRPORT DISTANCES',
+      image: 'assets/project_pictures/airport-distance-calculator.png',
+      technologies: ['Javascript', 'Angular', 'HTML5', 'CSS3', 'Angular Material', 'Google Maps API', 'Gulp'],
+      description: 'Calculates the distance between two US airports. The user chooses both a "from" and a "to" airport based on the airport code, city, or name. The map reflects the location(s) of the airport(s).',
+      githubUrl: 'https://github.com/zippyzow/airport-distance',
+      deployedUrl: 'https://haileykeen.com/airport/'
+    },
+    {
       title: 'THE PATH',
       image: 'assets/project_pictures/the-path-small.png',
       technologies: ['Javascript', 'Angular', 'HTML5', 'CSS3', 'Angular Material', 'Node', 'Express', 'MongoDB'],
